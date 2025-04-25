@@ -1,23 +1,22 @@
-import "./App.css";
-import AppName from "./component/component";
-import "AddTodo"
+import AppName from "./components/AppName";
+import AddTodo from "./components/AddTodo";
+import Todoitem from "./components/Todoitem";
 function App() {
   return (
-    <center className="container">
-      <AppName></AppName>
-      <div className="container text-center">
-        <div className="row">
-          <div className="col-6">
-            <input type="text" placeholder="Enter TODO Here" />
-          </div>
-          <div className="col-4">
-            <input type="date" name="" id="date" />
-          </div>
-          <div className="col-2">
-            <button type="button" className="btn btn-outline-success">
-              Add
-            </button>
-          </div>
+    <center class="todo-container">
+      <AppName />
+      {/* 1st */}
+      <AddTodo />
+      {/* 2nd  */}
+      <Todoite />
+      {/* 3rd */}
+      <div class="row">
+        <div class="col-6">Go to collage</div>
+        <div class="col-4">4/10/2023</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-outline-danger">
+            Delete
+          </button>
         </div>
       </div>
     </center>
